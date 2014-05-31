@@ -1,21 +1,20 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>ti0ma's GitHub Repo</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="./css/gh-fork-ribbon.css" />
-	    <!--[if IE]>
-	        <link rel="stylesheet" href="./css/gh-fork-ribbon.ie.css" />
-	    <![endif]-->
-	</head>
-	<body>
-		<div class="github-fork-ribbon-wrapper right">
-	        <div class="github-fork-ribbon">
-	            <a href="https://github.com/ti0ma">Fork me on GitHub</a>
-	        </div>
-	    </div>
-		<div style="width:390px; margin: 100px auto;">
-			<h1>UNDER CONSTRUCTION</h1>
-		</div>
-	</body>
-</html>
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1>Posts</h1>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
