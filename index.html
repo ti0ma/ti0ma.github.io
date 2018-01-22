@@ -1,23 +1,33 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Artem Molonosov | Full-Stack Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    setTimeout(() => {
+      // window.location.reload();
+    }, 1000);
+  </script>
+</head>
+<body>
+  <section class="main">
+    <div class="left">
+      <h1>Hi,</h1>
+      <h3>I'm Artem Molonosov</h3>
+      <p>I'm a Full-Stack Developer and I like writing code mainly in JS.</p>
+    </div>
+    <div class="right">
+      <img src="./images/photo.jpg">
+      <img class="overlay hat" src="./images/hat.png">
+      <img class="overlay chain" src="./images/chain.png">
+      <img class="overlay cigarette" src="./images/cigarette.png">
+      <img class="overlay glasses" src="./images/glasses.png">
+      <img class="overlay snoop snoop-left" src="./images/snoop.gif">
+      <img class="overlay snoop snoop-right" src="./images/snoop.gif">
+    </div>
+  </section>
+</body>
+</html>
