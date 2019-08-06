@@ -1,0 +1,68 @@
+body {
+  align-items: center;
+  background-color: #FAFCFF;
+  color: #91939a;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  animation: start .3s ease-in;
+  flex: 0 0 350px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px 23px rgba(228, 231, 236, .8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+section > * {
+  margin: 15px 0;
+}
+
+.photo {
+  border-radius: 50%;
+  width: 120px;
+}
+
+.social a {
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.social a i:before {
+  transition: transform .1s ease-in;
+}
+
+.social a:hover i:before {
+  transform: scale(1.5);
+}
+
+.twitter {
+  color: #38A1F3;
+}
+
+.github {
+  color: #333;
+}
+
+.linkedin {
+  color:#0077B5;
+}
+
+@keyframes start {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
