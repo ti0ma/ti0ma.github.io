@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   align-items: center;
   background-color: #FAFCFF;
   color: #91939a;
@@ -20,6 +21,19 @@ section {
   flex-direction: column;
   align-items: center;
   padding: 30px;
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    align-items: unset;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  section {
+    flex: 1;
+    margin: 40px 30px;
+  }
 }
 
 section > * {
